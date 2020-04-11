@@ -33,3 +33,10 @@ for tweet in tweets:
             users.append(u)
             ids.append(tweet['retweeted_status']['user']['id'])
 
+            
+#users=list(set(users))
+print(len(users))
+import operator
+
+users.sort(key=operator.attrgetter('fllwr'),reverse=1)
+
