@@ -1,1 +1,3 @@
-# DECODE_1923
+<img src="icon.png" align="right" />
+
+# Rumour Detection System
