@@ -40,3 +40,14 @@ import operator
 
 users.sort(key=operator.attrgetter('fllwr'),reverse=1)
 
+import csv
+
+with open('users1.csv', 'w') as f:
+    writer = csv.writer(f)
+    for u in users:
+        writer.writerow([u.id,u.name,u.fllwr])
+
+print(users[1].id,users[1].name,users[1].fllwr)
+import os
+os.system('spd-say "your program has finished"')
+
