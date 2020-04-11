@@ -18,3 +18,23 @@ csvFile = open('twts4.txt', 'a')
 #csvWriter = csv.writer(csvFile)
 i=0
 slp=0
+#csvFile.write('[')
+while True:
+    try:
+        for tweet in tweepy.Cursor(api.search,q="ElectionResults2019",count=100,lang="en").items():
+            i+=1
+            print (i)
+            csvFile.write(str(tweet._json)+'\n')
+    except Exception as e:
+        print(e)
+        if (slp<=900):
+            time.sleep(slp)
+            slp+=60
+            continue
+        i=100000
+        break
+    slp=0
+    if (i>=100000):
+        break
+    #csvWriter.writerow(tweet)
+#csvFile.write(']')
