@@ -51,3 +51,17 @@ print(users[1].id,users[1].name,users[1].fllwr)
 import os
 os.system('spd-say "your program has finished"')
 
+# import pandas as pd
+# labels=['ID','Handle','#Followers']
+# df=pd.DataFrame.from_records(users)
+# print(df.head())
+# with open('retUsrs.txt','w') as f:
+#     for u in range(len(users)):
+#         f.write(str(users[u])+' ')
+#         f.write(str(usrname[u])+' ')
+#         f.write(str(fllwrCnt[u])+'\n')
+#
+# print(len(users))
+#
+# print(json.dumps(tweets[0],indent=2))
+
