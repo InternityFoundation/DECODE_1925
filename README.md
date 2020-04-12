@@ -12,7 +12,7 @@ Twitter has become a very influential social media platform. Twitter statements 
 - Extracting the dataset from Twitter.
 - Extracting information of user whose tweets have been extracted.
 - Recognizing authentic users.
-- Checking whethere they follow each other or not.
+- Checking whether they follow each other or not.
 - Creating a csv file of the users along with their followers count.
 - Extracting the user ids of followers.
 - Plotting a graph of followers and following.
